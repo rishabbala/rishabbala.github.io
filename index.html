@@ -1,0 +1,457 @@
+<!DOCTYPE HTML>
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <!-- Hi, Jon Here. Please DELETE the two <script> tags below if you use this HTML, otherwise my analytics will track your page -->
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <!-- <script async src="https://www.googletagmanager.com/gtag/js?id=UA-7580334-2"></script> -->
+  <!-- <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'UA-7580334-2');
+  </script> -->
+
+  <title>Rishab Balasubramanian</title>
+
+  <meta name="author" content="Rishab Balasubramanian">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
+  <!-- <link rel="icon" type="image/jpg" href="images/logo.jpg"> -->
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:63%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Rishab Balasubramanian</name>
+              </p>
+              <p>
+                I am currently a first year MS/PhD student at Oregon State University, advised by Prasad Tadepalli. I work on 3D computer vision, and object reconstruction from images, adn have been trying my hand at reinforcement learning. Previously I was working as a Data Scientist/Computer Vision Engineer at <a href="https://endovisionai.com/">EndovisionAi</a>. Here I worked on SLAM and Shape from Shading methods for reconstructing human anatomy using endoscope images. I was a Research Assistant at <a href="https://www.marmotlab.org/">MARMoT Laboratory</a>, and the <a href="https://sites.google.com/view/m00nlab/home?authuser=0">MOON Laboratory</a>. I completed my Bachelor's (B.Tech) from the National Institute of Technology Tiruchirapalli (NIT-Trichy), India, where I was a part of <a href="http://rmi.nitt.edu/">RMI</a>, the official robotics club. I have also worked at the Biomedical Instrumentation and Signal Processing Lab with <a href="https://apm.iitm.ac.in/biomedical/prof.Reddy/index.html">Prof. Ramasubba Reddy</a>
+              </p>
+              <p>
+                As part of my undergraduate thesis with <a href="https://www.nitt.edu/home/academics/departments/ice/faculty/professors/umapathy/">Prof. Umapathy</a>, I worked on developing and comapring the results from Optimal Reciprocal Collision Avoidance (ORCA) with other traditional methods for multi-agent collision avoidance and formation control.
+                I am mainly interested in control and dynamics, path planning, optimization and learning for robots.
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:rishab.edu@gmail.com">Email</a> &nbsp/&nbsp
+                <a href="data/Resume.pdf">CV</a> &nbsp/&nbsp
+                <a href="https://github.com/rishabbala">Github</a> &nbsp/&nbsp
+                <a href="https://scholar.google.com/citations?user=K5x0hwcAAAAJ&hl=en&authuser=2">Google Scholar</a><!--&nbsp/&nbsp-->
+                <!-- <a href="data/bio.txt">Biography</a> &nbsp/&nbsp -->
+              </p>
+            </td>
+            <td style="padding:2.5%;width:40%;max-width:40%">
+              <a href="images/photo.png"><img style="width:100%;max-width:100%" alt="profile photo" src="images/photo-circle.png" class="hoverZoomLink"></a>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+            <td style="padding:20px;width:100%;vertical-align:middle">
+              <heading>Research</heading>
+              <p>
+                My primary research lies in the area of 3D computer vision. I work on Shape-from-Shading, Shape-from-Motion, SLAM, and object reconstruction using Deep Learning. I'm also extensively interested in robotics, where these ideas may be applied. I used to work on developing optimal control and path planning algorithms for mobile and legged robots robots. My robotics journey began with electronics, and moved on to deep learning and vision, and finally to control and path-planning algorithms. Over the past few years I  have worked on SLAM, Reinforcement Learning, control and algorithms. Im also interested in competitive programming (just started xD)
+                <!-- Representative papers are <span class="highlight">highlighted</span>. -->
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+
+          <tr onmouseout="recon_stop()" onmouseover="recon_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                </br>
+                <div class="two" id='recon_image'><video  width="100%"  muted autoplay loop>
+                <source src="images/recon_demo.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/recon.png' width=100%>
+              </div>
+              <script type="text/javascript">
+                function recon_start() {
+                  document.getElementById('recon_image').style.opacity = "1";
+                }
+
+                function recon_stop() {
+                  document.getElementById('recon_image').style.opacity = "0";
+                }
+                rtab_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="webpages/3d_recon.html">
+                <papertitle>3D reconstruction from RGB endoscopic images</papertitle>
+              </a>
+              <br>
+              <strong>Rishab Balasubramanian</strong>,
+              <a href="https://endovisionai.com/">EndovisionAi</a>
+              <br>
+              <!-- <a href="https://github.com/Bibbidi-Babbidi-Boo/Hexapod-SLAM">code</a> -->
+              <br>
+              <br>
+              <br>
+              <!-- <p>Working on autonomous control of a legged robot to map a room using RTABMap Framework</p> -->
+            </td>
+          </tr>
+
+          <tr onmouseout="tsp_stop()" onmouseover="tsp_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                </br>
+                <div class="two" id='tsp_image'><video  width="100%" muted autoplay loop>
+                <source src="images/tsp.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/tsp.png' width=100%>
+              </div>
+              <script type="text/javascript">
+                function tsp_start() {
+                  document.getElementById('tsp_image').style.opacity = "1";
+                }
+
+                function tsp_stop() {
+                  document.getElementById('tsp_image').style.opacity = "0";
+                }
+                tsp_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="webpages/tsp.html">
+                <papertitle>Risk Averse Submodular Optimization for the Multi-Objective Travelling Salesman Problem</papertitle>
+              </a>
+              <br>
+              <strong>Rishab Balasubramanian</strong>,
+              <a href="https://lfzhou917.github.io/">Lifeng Zhou, </a>
+              <a href="https://tokekar.com/">Pratap Tokekar, </a>
+              <a href="https://eecs.iiserb.ac.in/faculty_profile.php?id=OQ==&lname=c3VqaXQ=">P.B.Sujit</a>
+              <!-- <br> -->
+              <!-- <em>Ongoing</em>, 2020 -->
+              <br>
+              <em>Submitted to International Conference on Robotics and Automation (ICRA)</em> 2021 <font color=#FF8080></font>
+              <br>
+              <a href="https://arxiv.org/abs/2011.01095">arXiv</a> /
+              <a href="https://github.com/Bibbidi-Babbidi-Boo/Risk-Aware-TSP">code</a>
+              <!-- <a href="https://www.youtube.com/watch?v=rHtQQlQo1Q4">video</a> / -->
+              <p>Developed a Risk Aware Greedy Algorithm for tour selection in the Travelling Salesman Problem using submodular optimization over a matroidal constraint</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="rtab_stop()" onmouseover="rtab_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                </br>
+                <div class="two" id='rtab_image'><video  width="100%"  muted autoplay loop>
+                <source src="images/rtabmap.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/rtabmap1.png' width=100%>
+              </div>
+              <script type="text/javascript">
+                function rtab_start() {
+                  document.getElementById('rtab_image').style.opacity = "1";
+                }
+
+                function rtab_stop() {
+                  document.getElementById('rtab_image').style.opacity = "0";
+                }
+                rtab_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="webpages/rtabmap.html">
+                <papertitle>Autonomous Mapping And Safe Footfall Planning For Hexapods</papertitle>
+              </a>
+              <br>
+              <strong>Rishab Balasubramanian</strong>,
+              <a href="https://www.marmotlab.org/people.html">Sun Ge, Guillaume Sartoretti</a>
+              <br>
+              <a href="https://github.com/Bibbidi-Babbidi-Boo/Hexapod-SLAM">code</a>
+              <br>
+              <p>Working on autonomous control of a legged robot to map a room using RTABMap Framework</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="decomp_stop()" onmouseover="decomp_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                </br>
+                <div class="two" id='decomp_image'><video  width=100% height=75% muted autoplay loop>
+                <source src="images/decomp1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/decomp1.png' width=100%>
+              </div>
+              <script type="text/javascript">
+                function decomp_start() {
+                  document.getElementById('decomp_image').style.opacity = "1";
+                }
+
+                function decomp_stop() {
+                  document.getElementById('decomp_image').style.opacity = "0";
+                }
+                decomp_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="webpages/decomp.html">
+                <papertitle>Domain Decomposition Using Reinforcement Learning for Multi-Agent Search</papertitle>
+              </a>
+              <br>
+              <a>Mateo Guaman</a>,
+              <strong>Rishab Balasubramanian</strong>,
+              <a>Himanshu Patil</a>,
+              <a href="https://www.marmotlab.org/people.html">Guillaume Sartoretti</a>
+              <br>
+              <em>Ongoing</em>, 2020
+              <br>
+              <p>Developing an algorithm to decompose the environment to simplify multi-agent search given information estimation and robot positions.</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="orca_stop()" onmouseover="orca_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+              </br>
+                <div class="two" id='orca_image'><video width=100%  muted autoplay loop>
+                <source src="images/4_bot.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/4_bot.png' width="100%">
+              </div>
+              <script type="text/javascript">
+                function orca_start() {
+                  document.getElementById('orca_image').style.opacity = "1";
+                }
+
+                function orca_stop() {
+                  document.getElementById('orca_image').style.opacity = "0";
+                }
+                orca_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="webpages/orca.html">
+                <papertitle>Formation Control And Collision Avoidance For Multi-Agent Systems</papertitle>
+              </a>
+              <br>
+              <strong>Rishab Balasubramanian</strong>,
+              <a>Lalita Soundari</a>,
+              <a href="https://www.nitt.edu/home/academics/departments/ice/faculty/professors/umapathy/">Prof. M Umapathy</a>
+              <br>
+              <a href="https://github.com/Bibbidi-Babbidi-Boo/Swarm_formation_control/blob/master/main.pdf">Thesis</a>
+              <p></p>
+              <p>Multi agent collision Avoidance using the Optimal Reciprocal Collision Avoidance (ORCA) Algorithm and comparison with other algorithms</p>
+            </td>
+          </tr>
+
+
+          <tr onmouseout="sdre_stop()" onmouseover="sdre_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+                </br>
+                <div class="two" id='sdre_image'><video  width="100%" muted autoplay loop>
+                <source src="images/two_agent_land_no_crash_20.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/two_agent_no_crash.png' width=100%>
+              </div>
+              <script type="text/javascript">
+                function sdre_start() {
+                  document.getElementById('sdre_image').style.opacity = "1";
+                }
+
+                function sdre_stop() {
+                  document.getElementById('sdre_image').style.opacity = "0";
+                }
+                sdre_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="webpages/sdre.html">
+                <papertitle>A Cooperative Framework for Autonomous Landings of Quadrotors using Vision on a Moving UGV</papertitle>
+              </a>
+              <br>
+              <strong>Rishab Balasubramanian</strong>,
+              <a href="https://eecs.iiserb.ac.in/faculty_profile.php?id=OQ==&lname=c3VqaXQ=">P.B. Sujit</a>
+              <br>
+              <em>AIAA SciTech (accepted)</em>, 2021
+              <br>
+              <a href="https://drive.google.com/file/d/1VBC6i1s5VwXYQz_9gdQNBaXuKd_INaIM/view?usp=sharing">paper</a> /
+              <a href="https://github.com/Bibbidi-Babbidi-Boo/SDRE-based-Cooperative-UAV-Landing-on-High-speed-targets">code</a>
+              <p></p>
+              <p>Using SDRE Optimal control to land multiple UAVs on high speed targets moving on curved trajectories</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="pe_stop()" onmouseover="pe_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+              </br>
+                <div class="two" id='pe_image'><video width=160  muted autoplay loop>
+                <source src="images/pe.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/pe1.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function pe_start() {
+                  document.getElementById('pe_image').style.opacity = "1";
+                }
+
+                function pe_stop() {
+                  document.getElementById('pe_image').style.opacity = "0";
+                }
+                pe_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="webpages/pe.html">
+                <papertitle>Efficient Geometric Algorithm for the Multi-Player Pursuit Evasion Game</papertitle>
+              </a>
+              <br>
+              <strong>Rishab Balasubramanian</strong>,
+              <a href="https://eecs.iiserb.ac.in/faculty_profile.php?id=OQ==&lname=c3VqaXQ=">P.B. Sujit</a>
+              <br>
+              <a href="https://drive.google.com/file/d/1x9IQsAflk20ZX5a2rP6lcjUzAO4nU-ga/view?usp=sharing">abstract </a>/
+              <a href="https://github.com/Bibbidi-Babbidi-Boo/Pursuit-Evasion">code</a>
+              <p></p>
+              <p>Worked on designing an effieceint algorithm for guaranteed capture of the evader in a pursuit evasion game, using the geometric properties of the plygon formed by all players.</p>
+            </td>
+          </tr>
+
+
+          <tr onmouseout="asl_stop()" onmouseover="asl_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+              </br>
+                <div class="two" id='asl_image'><video width=160  muted autoplay loop>
+                <source src="images/asl_clear_back.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/asl.png' width="160">
+              </div>
+              <script type="text/javascript">
+                function asl_start() {
+                  document.getElementById('asl_image').style.opacity = "1";
+                }
+
+                function asl_stop() {
+                  document.getElementById('asl_image').style.opacity = "0";
+                }
+                asl_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="webpages/asl.html">
+                <papertitle>Real-Time American Sign Language To Text Conversion Using Convolutional Neural Networks</papertitle>
+              </a>
+              <br>
+              <strong>Rishab Balasubramanian</strong>,
+              <a href="http://apm.iitm.ac.in/biomedical/prof.Reddy/index.html">Ramasubba Reddy</a>
+              <br>
+              <br>
+              <a href="https://drive.google.com/file/d/1RuTZp9CnLjQAjBO49qSd_nImj2liiyG4/view?usp=sharing">abstract </a>/
+              <a href="https://github.com/Bibbidi-Babbidi-Boo/ASL-Text-Converter">code</a>
+              <p></p>
+              <p>Developed a real-time deep learning frame work to convert American Sign Language finger spelling to text using Keras</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="bb_stop()" onmouseover="bb_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+              </br>
+                <div class="two" id='bb_image'><video width=160  muted autoplay loop>
+                <source src="images/bb1.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/bb2.jpg' width="160"; height="110">
+              </div>
+              <script type="text/javascript">
+                function bb_start() {
+                  document.getElementById('bb_image').style.opacity = "1";
+                }
+
+                function bb_stop() {
+                  document.getElementById('bb_image').style.opacity = "0";
+                }
+                bb_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="webpages/bb.html">
+                <papertitle>Ballbot</papertitle>
+              </a>
+              <br>
+              <strong>Rishab Balasubramanian</strong>,
+              <a>Harishankar R, Aswin G, Harinaath Gopi</a>
+              <br>
+              <br>
+              <a href="https://drive.google.com/file/d/1MpAlcpipBu6FWh2BvEPapxPjTp6kdsql/view?usp=sharing">abstract </a>/
+              <a href="https://github.com/Bibbidi-Babbidi-Boo/Ballbot">code</a>
+              <p></p>
+              <p>Simulated a dynamic ball-balancing robot, with point to point movement using a PID controller</p>
+            </td>
+          </tr>
+
+          <tr onmouseout="snake_stop()" onmouseover="snake_start()">
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <div class="one">
+              </br>
+                <div class="two" id='snake_image'><video width=160  muted autoplay loop>
+                <source src="images/snake_cut.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video></div>
+                <img src='images/snake1.jpeg' width="160"; height="90">
+              </div>
+              <script type="text/javascript">
+                function snake_start() {
+                  document.getElementById('snake_image').style.opacity = "1";
+                }
+
+                function snake_stop() {
+                  document.getElementById('snake_image').style.opacity = "0";
+                }
+                snake_stop()
+              </script>
+            </td>
+            <td style="padding:20px;width:75%;vertical-align:middle">
+              <a href="webpages/snake.html">
+                <papertitle>Snakebot</papertitle>
+              </a>
+              <br>
+              <strong>Rishab Balasubramanian</strong>,
+              <a>Monsalisa Panda, Soumyarup Lahiri, Dhanavel C</a>
+              <br>
+              <br>
+              <a href="https://drive.google.com/file/d/162Vt8ywHT6cfrGgaguSVVGraiiHQI4_J/view?usp=sharing">abstract </a>/
+              <a href="https://github.com/Bibbidi-Babbidi-Boo/Ballbot">code</a>
+              <p></p>
+              <p>Designed and developed a six-degree-of-freedom snake-robot and multiple gaits for locomotion in different terrains</p>
+            </td>
+          </tr>
+
+
+        </tbody></table>
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+          <tr>
+            <td style="padding:0px">
+              <br>
+              <p style="text-align:right;font-size:small;">
+                Special thanks to Jon Barron for the website template
+              </p>
+            </td>
+          </tr>
+        </tbody></table>
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

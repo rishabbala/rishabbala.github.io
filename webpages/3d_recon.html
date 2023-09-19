@@ -48,7 +48,7 @@ body {font-family: "Lato", sans-serif}
   <!-- The Content Section -->
   <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:1500px" id="band">
     <h1 class="w3">3D reconstruction from RGB endoscopic images</h2>
-    <h3><p class="w3">It is difficult for docters and experts to accurately estimate the size of lesions by looking at the incoming endoscopicvideo feed alone. In this work, we aimed to develop a framework to generate 3D models of the human anatomy using given RGB frames, and congregate the image pixels to create 3D point clouds, and measure distances and sizes using the output. For this, we used the Shape-from Shading method developed by Vogel-Breuss-Weickwert, solving the resulting PDE. This is under the assumption that the input images are Lambertian, and to ensure this, we make use of inpainting algorithms to remove specularities.</p></h3>
+    <h3><p class="w3">It is difficult for docters and experts to accurately estimate the size of lesions by looking at the incoming endoscopic video feed alone. In this work, we aimed to develop a framework to generate 3D models of the human anatomy using given RGB frames, and congregate the image pixels to create 3D point clouds to help experts make measurements. For this, we used the Shape-from Shading method developed by Vogel-Breuss-Weickwert, solving the resulting PDE. This is under the assumption that the input images are Lambertian, and to ensure this, we make use of inpainting algorithms to remove specularities. We also use an unsupervised training method for estimating depth from consecutive images.</p></h3>
 
   <video width="100%" controls>
     <source src="../images/recon_demo.mp4" type="video/mp4">

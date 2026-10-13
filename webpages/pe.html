@@ -6,22 +6,41 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="../stylesheet.css">
+<link rel="icon" type="image/svg+xml" href="../images/spark.svg">
+<script src="../site.js" defer></script>
 <style>
 body {font-family: "Lato", sans-serif}
 .mySlides {display: none}
+</style><style>
+body {
+  background: #fff;
+  color: #000;
+  font-family: "SFMono-Regular", Menlo, Consolas, "Liberation Mono", "DejaVu Sans Mono", "Courier New", monospace;
+  font-size: 17px;
+  line-height: 1.55;
+}
+.w3-content { margin-top: 8px; }
+.w3-center, h1, h3 { text-align: left; }
+h1, h3 { font-size: 17px; font-weight: bold; margin: 1.2em 0 0.6em; }
+img, video { max-width: 100%; border: 1px solid #000; }
+a { color: #0000ee; }
 </style>
 <body>
-
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
+  <div class="page-art" aria-hidden="true">
+    <div class="gutter-art gutter-art-left"></div>
+    <div class="gutter-art gutter-art-right"></div>
+    <canvas id="art-background"></canvas>
   </div>
+  <div class="notebook">
+
+<!-- Subpage top bar -->
+<div class="subnav">
+  <a href="../index.html">&larr; Rishab Balasubramanian</a>
 </div>
 
 <!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
+<div class="w3-content" style="max-width:760px;margin-top:24px">
 
   <!-- Automatic Slideshow Images -->
   <div class="mySlides w3-display-container w3-center">
@@ -63,6 +82,7 @@ body {font-family: "Lato", sans-serif}
 
 <!-- End Page Content -->
 </div>
+  </div>
 
 <!-- Image of location/map -->
 <!-- <img src="/w3images/map.jpg" class="w3-image w3-greyscale-min" style="width:100%"> -->

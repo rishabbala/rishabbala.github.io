@@ -1,0 +1,240 @@
+{
+	"columns": 160,
+	"rows": 200,
+	"cellRatio": 0.6,
+	"glyphs": " .,:;~!i1tfLCG0@",
+	"inkRamp": [
+		"#93a4bd",
+		"#8799b3",
+		"#7b8da9",
+		"#70829f",
+		"#657795",
+		"#5b6c8b",
+		"#516181",
+		"#485677",
+		"#404c6d",
+		"#384263",
+		"#313859",
+		"#2a304e",
+		"#232943",
+		"#1c2138",
+		"#151a2c",
+		"#0c1220"
+	],
+	"buildSeconds": 2,
+	"holdSeconds": 5,
+	"exitSeconds": 2,
+	"preview": "preview.webp",
+	"frames": [
+		{
+			"id": "abaddon",
+			"hero": "Abaddon",
+			"role": "Offlane",
+			"file": "abaddon.bin"
+		},
+		{
+			"id": "antimage",
+			"hero": "Anti-Mage",
+			"role": "Carry",
+			"file": "antimage.bin"
+		},
+		{
+			"id": "axe",
+			"hero": "Axe",
+			"role": "Offlane",
+			"file": "axe.bin"
+		},
+		{
+			"id": "bloodseeker",
+			"hero": "Bloodseeker",
+			"role": "Carry",
+			"file": "bloodseeker.bin"
+		},
+		{
+			"id": "chaosknight",
+			"hero": "Chaos Knight",
+			"role": "Carry",
+			"file": "chaosknight.bin"
+		},
+		{
+			"id": "doom",
+			"hero": "Doom",
+			"role": "Offlane",
+			"file": "doom.bin"
+		},
+		{
+			"id": "drowranger",
+			"hero": "Drow Ranger",
+			"role": "Carry",
+			"file": "drowranger.bin"
+		},
+		{
+			"id": "emberspirit",
+			"hero": "Ember Spirit",
+			"role": "Mid",
+			"file": "emberspirit.bin"
+		},
+		{
+			"id": "facelessvoid",
+			"hero": "Faceless Void",
+			"role": "Carry",
+			"file": "facelessvoid.bin"
+		},
+		{
+			"id": "invoker",
+			"hero": "Invoker",
+			"role": "Mid",
+			"file": "invoker.bin"
+		},
+		{
+			"id": "juggernaut",
+			"hero": "Juggernaut",
+			"role": "Carry",
+			"file": "juggernaut.bin"
+		},
+		{
+			"id": "kunkka",
+			"hero": "Kunkka",
+			"role": "Mid",
+			"file": "kunkka.bin"
+		},
+		{
+			"id": "legioncommander",
+			"hero": "Legion Commander",
+			"role": "Offlane",
+			"file": "legioncommander.bin"
+		},
+		{
+			"id": "lifestealer",
+			"hero": "Lifestealer",
+			"role": "Carry",
+			"file": "lifestealer.bin"
+		},
+		{
+			"id": "lina",
+			"hero": "Lina",
+			"role": "Mid",
+			"file": "lina.bin"
+		},
+		{
+			"id": "luna",
+			"hero": "Luna",
+			"role": "Carry",
+			"file": "luna.bin"
+		},
+		{
+			"id": "magnus",
+			"hero": "Magnus",
+			"role": "Offlane",
+			"file": "magnus.bin"
+		},
+		{
+			"id": "medusa",
+			"hero": "Medusa",
+			"role": "Carry",
+			"file": "medusa.bin"
+		},
+		{
+			"id": "morphling",
+			"hero": "Morphling",
+			"role": "Carry",
+			"file": "morphling.bin"
+		},
+		{
+			"id": "nagasiren",
+			"hero": "Naga Siren",
+			"role": "Carry",
+			"file": "nagasiren.bin"
+		},
+		{
+			"id": "ogremagi",
+			"hero": "Ogre Magi",
+			"role": "Support",
+			"file": "ogremagi.bin"
+		},
+		{
+			"id": "phantomassassin",
+			"hero": "Phantom Assassin",
+			"role": "Carry",
+			"file": "phantomassassin.bin"
+		},
+		{
+			"id": "pudge",
+			"hero": "Pudge",
+			"role": "Support",
+			"file": "pudge.bin"
+		},
+		{
+			"id": "queenofpain",
+			"hero": "Queen of Pain",
+			"role": "Mid",
+			"file": "queenofpain.bin"
+		},
+		{
+			"id": "rubick",
+			"hero": "Rubick",
+			"role": "Support",
+			"file": "rubick.bin"
+		},
+		{
+			"id": "shadowfiend",
+			"hero": "Shadow Fiend",
+			"role": "Mid",
+			"file": "shadowfiend.bin"
+		},
+		{
+			"id": "slark",
+			"hero": "Slark",
+			"role": "Carry",
+			"file": "slark.bin"
+		},
+		{
+			"id": "spectre",
+			"hero": "Spectre",
+			"role": "Carry",
+			"file": "spectre.bin"
+		},
+		{
+			"id": "stormspirit",
+			"hero": "Storm Spirit",
+			"role": "Mid",
+			"file": "stormspirit.bin"
+		},
+		{
+			"id": "sven",
+			"hero": "Sven",
+			"role": "Carry",
+			"file": "sven.bin"
+		},
+		{
+			"id": "terrorblade",
+			"hero": "Terrorblade",
+			"role": "Carry",
+			"file": "terrorblade.bin"
+		},
+		{
+			"id": "ursa",
+			"hero": "Ursa",
+			"role": "Carry",
+			"file": "ursa.bin"
+		},
+		{
+			"id": "windranger",
+			"hero": "Windranger",
+			"role": "Mid",
+			"file": "windranger.bin"
+		},
+		{
+			"id": "wraithking",
+			"hero": "Wraith King",
+			"role": "Carry",
+			"file": "wraithking.bin"
+		},
+		{
+			"id": "zeus",
+			"hero": "Zeus",
+			"role": "Mid",
+			"file": "zeus.bin"
+		}
+	]
+}

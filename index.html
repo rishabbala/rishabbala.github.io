@@ -1,481 +1,269 @@
+<!--
+This research website pairs readable content with a full-page ASCII art gallery.
+Last modified: 2026-09-30
+-->
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<html lang="en">
 
-  <title>Rishab Balasubramanian</title>
-
-  <meta name="author" content="Rishab Balasubramanian">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  <!-- <link rel="icon" type="image/jpg" href="images/logo.jpg"> -->
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Rishab Balasubramanian</title>
+	<meta name="author" content="Rishab Balasubramanian">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Rishab Balasubramanian is a PhD student at Virginia Tech researching Language Modeling, Efficiency, Generalization, and Post-Training Alignment.">
+	<meta name="theme-color" content="#f4f1e7">
+	<link rel="stylesheet" type="text/css" href="stylesheet.css">
+	<link rel="icon" type="image/svg+xml" href="images/spark.svg">
+	<script src="site.js" defer></script>
 </head>
 
-<body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-	<tr style="padding:0px">
-	  <td style="padding:0px">
+<body class="home" id="top">
+	<a class="skip-link" href="#main">Skip to content.</a>
+	<div class="page-art" aria-hidden="true">
+		<div class="gutter-art gutter-art-left"></div>
+		<div class="gutter-art gutter-art-right"></div>
+		<canvas id="art-background"></canvas>
+	</div>
+	<div class="notebook">
+		<div class="signal-ribbon" aria-hidden="true"></div>
+		<header class="site-header">
+			<a class="wordmark" href="#top" aria-label="Rishab Balasubramanian, home">
+				<span class="pixel-flower" aria-hidden="true">✳</span> sub_rbala
+			</a>
+			<nav class="contact-nav" aria-label="Contact and profiles">
+				<a href="mailto:rishab.edu@gmail.com">Email ↗</a>
+				<a href="data/Resume_TwoPage.pdf">CV ↗</a>
+				<a href="https://github.com/rishabbala">GitHub ↗</a>
+				<a href="https://scholar.google.com/citations?user=fiGcBQ4AAAAJ&amp;hl=en">Scholar ↗</a>
+			</nav>
+			<button class="motion-toggle" type="button" aria-pressed="false" hidden>Pause motion</button>
+		</header>
 
+		<div class="notebook-layout">
+			<aside class="chapter-rail">
+				<nav class="chapter-nav" aria-label="Page sections">
+					<a class="is-active" href="#about" aria-current="location"><span>01</span> About</a>
+					<a href="#news"><span>02</span> News</a>
+					<a href="#research"><span>03</span> Research</a>
+					<a href="#projects"><span>04</span> Projects</a>
+				</nav>
+				<div class="rail-progress" aria-hidden="true"><span></span></div>
+				<span class="rail-spark" aria-hidden="true">✳</span>
+			</aside>
 
-		<!-- INTRO -->
-		<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-		  <tr style="padding:0px">
-			<td style="padding:2.5%;width:63%;vertical-align:middle">
-			  <p style="text-align:center">
-				<name>Rishab Balasubramanian</name>
-			  </p>
-			  <p>
-				I am a second year PhD student at Virginia Tech, advised by <a href="https://tuvllms.github.io/">Tu Vu</a>. My research interests lie at the intersection of deep learning, language modeling, eﬀiciency and alignment. Previously, I worked with <a href="https://huazhengwang.github.io/">Huazheng Wang</a> on adversarial attacks on bandit algorithms and the impact of ordering in recommendation systems. Long long ago, I completed my Bachelor's (B.Tech) from the National Institute of Technology Tiruchirapalli (NIT-Trichy), India, where I was a part of <a href="http://rmi.nitt.edu/">RMI</a>, the robotics club.
-			  </p>
+			<main id="main">
+				<section class="about-section" id="about" aria-labelledby="about-title">
+					<div class="hero">
+						<div class="hero-copy">
+							<h1 id="about-title">Rishab<br>Balasubramanian</h1>
+							<p class="biography">
+								I am a third year PhD student at Virginia Tech, advised by
+								<a href="https://tuvllms.github.io/">Tu Vu</a>. My research interests are
+								Language Modeling, Efficiency, Generalization, and Post-Training Alignment.
+								Previously, I worked with <a href="https://huazhengwang.github.io/">Huazheng Wang</a>
+								on adversarial attacks on bandit algorithms and the impact of ordering in
+								recommendation systems. Long long ago, I completed my Bachelor's (B.Tech) from
+								the National Institute of Technology Tiruchirapalli (NIT-Trichy), India, where
+								I was a part of <a href="http://rmi.nitt.edu/">RMI</a>, the robotics club.
+							</p>
+							<a class="hero-link" href="#research">Explore my research <span aria-hidden="true">↗</span></a>
+						</div>
+						<figure class="portrait">
+							<a href="images/photo.jpg"><img class="photo" alt="Rishab in San Francisco" src="images/photo.jpg" width="360" height="450" decoding="async"></a>
+						</figure>
+					</div>
 
-			  <p style="text-align:center">
-				<a href="mailto:rishab.edu@gmail.com">Email</a> &nbsp/&nbsp
-				<a href="data/Resume_TwoPage.pdf" target="_blank">CV</a> &nbsp/&nbsp
-				<a href="https://github.com/rishabbala" target="_blank">Github</a> &nbsp/&nbsp
-				<a href="https://scholar.google.com/citations?user=fiGcBQ4AAAAJ&hl=en" target="_blank">Google Scholar</a>
-			  </p>
-			</td>
-			<td style="padding:2.5%;width:40%;max-width:40%">
-			  <a href="images/photo.jpg"><img style="width:90%;max-width:100%" alt="profile photo" src="images/photo.jpg" class="hoverZoomLink"></a>
-			</td>
-		  </tr>
-		</tbody></table>
+					<div class="research-compass">
+						<div class="compass-heading"><h3>Research Interests</h3></div>
+						<ul class="research-directions">
+							<li>
+								<span class="direction-symbol" aria-hidden="true">⌘</span>
+								<h4>Language Modeling</h4>
+								<p class="direction-description">How language models learn, reason, and generate text.</p>
+							</li>
+							<li>
+								<span class="direction-symbol" aria-hidden="true">↗</span>
+								<h4>Efficiency</h4>
+								<p class="direction-description">Ways to reduce the compute and memory costs of language models.</p>
+							</li>
+							<li>
+								<span class="direction-symbol" aria-hidden="true">▤</span>
+								<h4>Generalization</h4>
+								<p class="direction-description">How models perform on tasks and data beyond their training distribution.</p>
+							</li>
+							<li>
+								<span class="direction-symbol" aria-hidden="true">⊕</span>
+								<h4>Post-Training Alignment</h4>
+								<p class="direction-description">Post-training methods that align language models with human goals and preferences.</p>
+							</li>
+						</ul>
+					</div>
+				</section>
 
-
-    <br>
-		<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-			<tr>
-			<td style="padding:20px;width:100%;vertical-align:middle">
-			  <span style="background-color: #d1ffc9"><heading>Recent News</heading></span>
-			</td>
-		  </tr>
-		</tbody></table>
-		<div class="scrollable-news">
-			<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-				<tr>
-					<td style="padding:20px;width:100%;vertical-align:middle">
-						<p>
-							[05/20/2025] One paper accepted to EMNLP 2025
-						</p>
-            <p>
-							[09/12/2024] One paper accepted to TMLR.
-						</p>
-            <p>
-							[25/08/2024] Started PhD at Virginia Tech.
-						</p>
-            <p>
-							[01/05/2024] One paper accepted to ICML 2024.
-						</p>
-            <p>
-							[09/26/2023] One paper accepted to Neurips 2024.
-						</p>
-					</td>
-				</tr>
-			</tbody></table>
+	<section class="content-section news-section" id="news" aria-labelledby="news-title">
+		<div class="section-heading">
+			<span class="section-number">02 /</span><h2 id="news-title">Recent News</h2><span class="heading-mark" aria-hidden="true">✳</span>
 		</div>
-		<br>
+		<ul class="news-list">
+			<li><span class="news-date">[10/01/2026]</span><span>One paper accepted to NeurIPS 2026 as Spotlight!</span></li>
+			<li><span class="news-date">[05/18/2026]</span><span>Started my internship at Amazon AGI</span></li>
+			<li><span class="news-date">[05/05/2026]</span><span>New paper on generalization and transferability in language models</span></li>
+			<li><span class="news-date">[02/14/2026]</span><span>New paper on recursive agents</span></li>
+			<li><span class="news-date">[05/20/2025]</span><span>One paper accepted to EMNLP 2025.</span></li>
+			<li><span class="news-date">[09/12/2024]</span><span>One paper accepted to TMLR.</span></li>
+			<li><span class="news-date">[25/08/2024]</span><span>Started PhD at Virginia Tech.</span></li>
+			<li><span class="news-date">[01/05/2024]</span><span>One paper accepted to ICML 2024.</span></li>
+			<li><span class="news-date">[09/26/2023]</span><span>One paper accepted to NeurIPS 2024.</span></li>
+		</ul>
+	</section>
 
+	<section class="content-section research-section" id="research" aria-labelledby="research-title">
+		<div class="section-heading">
+			<span class="section-number">03 /</span><h2 id="research-title">Research Work</h2><span class="heading-mark" aria-hidden="true">✳</span>
+		</div>
 
-		<br>
-		<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-			<tr>
-			<td style="padding:20px;width:100%;vertical-align:middle">
-			  <span style="background-color: #d1ffc9"><heading>Research Work</heading></span>
-			</td>
-		  </tr>
-		</tbody></table>
-		<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+		<div class="entry">
+			<p>
+				<b><a href="https://arxiv.org/abs/2604.06377">The Master Key Hypothesis: Unlocking Cross-Model Capability Transfer via Linear Subspace Alignment</a></b><br>
+				<b>Rishab Balasubramanian</b>, Pin-Jie Lin, Rituraj Sharma, Anjie Fang, Fardin Abdi, Viktor Rozgic, Zheng Du, Mohit Bansal, Tu Vu<br>
+				<span class="meta"><b><u>Spotlight (<2%) at</u></b> NeurIPS 2026.</span><br>
+			</p>
+		</div>
 
-      <!-- Efficient Transfer -->
-		   <tr onmouseout="cmab_stop()" onmouseover="cmab_start()">
-        <td style="padding:20px;width:25%;vertical-align:middle">
-          <div class="one">
-          </br>
-          <div class="two" id='recycling_img'><img style="width:100%"  src="images/recycling_pipeline_fig.jpg"></div>
-          <img src='images/recycling_pipeline_fig.jpg' width=100%>
-          </div>
-          <script type="text/javascript">
-          function cmab_start() {
-            document.getElementById('recycling_img').style.opacity = "1";
-          }
+		
+		<div class="entry">
+			<p>
+				<b><a href="https://arxiv.org/abs/2503.20110">Efficient Model Development through Fine-tuning Transfer</a></b><br>
+				Pin-Jie Lin, <b>Rishab Balasubramanian</b>, Fengyuan Liu, Nikhil Kandpal, Tu Vu<br>
+				<span class="meta">Accepted to EMNLP 2025.</span><br>
+			</p>
+		</div>
 
-          function cmab_stop() {
-            document.getElementById('recycling_img').style.opacity = "0";
-          }
-          cmab_stop()
-          </script>
-        </td>
-        <td style="padding:20px;width:75%;vertical-align:middle">
-          <papertitle>Efficient Model Development through Fine-tuning Transfer</papertitle>
-          </a>
-          <br>
-          Pin-Jie Lin, <strong>Rishab Balasubramanian</strong>, Fengyuan Liu, Nikhil Kandpal, Tu Vu
-          <br>
-          <i style="color: red;">Accepted to EMNLP 2024.</i>
-          <br>
-          <a href="https://arxiv.org/pdf/2503.20110?">paper</a>
-          <br>
-          <br>
-        </td>
-        </tr>
+		<div class="entry">
+			<p>
+				<b><a href="https://openreview.net/pdf?id=0tPBk24xNj">Adversarial Attacks on Combinatorial Multi-Armed Bandits</a></b><br>
+				<b>Rishab Balasubramanian</b>, Jiawei Li, Prasad Tadepalli, Huazheng Wang, Qingyun Wu, Haoyu Zhao<br>
+				<span class="meta">Accepted to ICML 2024.</span><br>
+				<span class="links"><a href="https://openreview.net/pdf?id=0tPBk24xNj">[paper]</a></span>
+			</p>
+		</div>
 
+		<div class="entry">
+			<p>
+				<b><a href="https://arxiv.org/abs/2305.19218">Adversarial Attacks on Online Learning to Rank with Stochastic Click Models</a></b><br>
+				Zichen Wang, <b>Rishab Balasubramanian</b>, Hui Yuan, Chenyu Song, Mengdi Wang, Huazheng Wang<br>
+				<span class="meta">Accepted to TMLR.</span><br>
+				<span class="links">
+					<a href="https://arxiv.org/abs/2305.19218">[arXiv]</a>
+					<a href="https://openreview.net/pdf?id=BKwGowR0Bt">[paper]</a>
+				</span>
+			</p>
+		</div>
 
-		  <!-- Adversarial attacks on CMAB -->
-		   <tr onmouseout="cmab_stop()" onmouseover="cmab_start()">
-			<td style="padding:20px;width:25%;vertical-align:middle">
-			  <div class="one">
-				</br>
-				<div class="two" id='cmab_image'><img style="width:100%"  src="images/cmab.png"></div>
-				<img src='images/cmab.png' width=100%>
-			  </div>
-			  <script type="text/javascript">
-				function cmab_start() {
-				  document.getElementById('cmab_image').style.opacity = "1";
-				}
+		<div class="entry">
+			<p>
+				<b><a href="https://arxiv.org/abs/2011.01095">Risk Averse Submodular Optimization for the Multi-Objective Travelling Salesman Problem</a></b><br>
+				<b>Rishab Balasubramanian</b>, <a href="https://lfzhou917.github.io/">Lifeng Zhou</a>,
+				<a href="https://tokekar.com/">Pratap Tokekar</a>,
+				<a href="https://eecs.iiserb.ac.in/faculty_profile.php?id=OQ==&amp;lname=c3VqaXQ=">P.B. Sujit</a><br>
+				<span class="meta">Accepted to IROS 2021.</span><br>
+				<span class="links">
+					<a href="https://arxiv.org/abs/2011.01095">[paper]</a>
+					<a href="https://drive.google.com/file/d/1enEaAZZIVq4uoyVOR9-MiQPVb8u8MLgB/view?usp=drive_link">[video]</a>
+					<a href="https://github.com/rishabbala/Risk-Aware-TSP">[code]</a>
+				</span>
+			</p>
+		</div>
 
-				function cmab_stop() {
-				  document.getElementById('cmab_image').style.opacity = "0";
-				}
-				cmab_stop()
-			  </script>
-			</td>
-			<td style="padding:20px;width:75%;vertical-align:middle">
-				<papertitle>Adversarial Attacks on Combinatorial Multi-Armed Bandits</papertitle>
-			  </a>
-			  <br>
-			  <strong>Rishab Balasubramanian</strong>,
-			  Jiawei Li, Prasad Tadepalli, Huazheng Wang, Qingyun Wu, Haoyu Zhao
-			  <br>
-			  <i style="color: red;">Accepted to ICML 2024</i>
-			  <br>
-			  <a href="https://openreview.net/pdf?id=0tPBk24xNj">paper</a>
-			  <br>
-			  <br>
-			</td>
-		  </tr>
+		<div class="entry">
+			<p>
+				<b><a href="https://arc.aiaa.org/doi/abs/10.2514/6.2021-1880">A Cooperative Framework for Autonomous Landings of Quadrotors using Vision on a Moving UGV</a></b><br>
+				<b>Rishab Balasubramanian</b>,
+				<a href="https://eecs.iiserb.ac.in/faculty_profile.php?id=OQ==&amp;lname=c3VqaXQ=">P.B. Sujit</a><br>
+				<span class="meta">Accepted to AIAA SciTech 2021.</span><br>
+				<span class="links">
+					<a href="https://arc.aiaa.org/doi/abs/10.2514/6.2021-1880">[paper]</a>
+					<a href="https://github.com/Bibbidi-Babbidi-Boo/SDRE-based-Cooperative-UAV-Landing-on-High-speed-targets">[code]</a>
+					<a href="https://drive.google.com/file/d/1cGH-qz4Ma5or8YGSOUNxVn9yl9IOdUs9/view?usp=drive_link">[slides]</a>
+					<a href="https://drive.google.com/file/d/1xKIcKVUNTNxpr2m7UbXNa72MOtT5KCh7/view?usp=drive_link">[video]</a>
+				</span>
+			</p>
+		</div>
+	</section>
 
+	<section class="content-section projects-section" id="projects" aria-labelledby="projects-title">
+		<div class="section-heading">
+			<span class="section-number">04 /</span><h2 id="projects-title">Other Projects</h2><span class="heading-mark" aria-hidden="true">✳</span>
+		</div>
+		<div class="project-grid">
 
-		  <!-- Adversarial attack on stochastic click models -->
-		  <tr onmouseout="ck_mode_stop()" onmouseover="ck_mode_start()">
-			<td style="padding:20px;width:25%;vertical-align:middle">
-			  <div class="one">
-				</br>
-				<div class="two" id='ck_mode_image'><img style="width:100%"  src="images/click_model.png"></div>
-				<img src='images/click_model.png' width=100%>
-			  </div>
-			  <script type="text/javascript">
-				function ck_mode_start() {
-				  document.getElementById('ck_mode_image').style.opacity = "1";
-				}
+		<div class="entry">
+			<p>
+				<b><a href="webpages/3d_recon.html">3D reconstruction from endoscopic images</a></b><br>
+				<b>Rishab Balasubramanian</b>, <a href="https://endovisionai.com/">EndovisionAi</a><br>
+				<span class="links"><a href="webpages/3d_recon.html">[page]</a></span>
+			</p>
+		</div>
 
-				function ck_mode_stop() {
-				  document.getElementById('ck_mode_image').style.opacity = "0";
-				}
-				ck_mode_stop()
-			  </script>
-			</td>
-			<td style="padding:20px;width:75%;vertical-align:middle">
-			  <a href="https://arxiv.org/abs/2305.19218">
-				<papertitle>Adversarial Attacks on Online Learning to Rank with Stochastic Click Models</papertitle>
-			  </a>
-			  <br>Zichen Wang,
-			  <strong>Rishab Balasubramanian</strong>,
-			  Hui Yuan, Chenyu Song, Mengdi Wang, Huazheng Wang
-			  <br>
-			  <i style="color: red;">Accepted to TMLR</i>
-			  <br>
-			  <a href="https://openreview.net/pdf?id=BKwGowR0Bt">paper</a>
-			  <br>
-			  <br>
-			</td>
-		  </tr>
+		<div class="entry">
+			<p>
+				<b><a href="https://arxiv.org/abs/2208.06083">Contrastive Learning for Out-of-Distribution Object Detection</a></b><br>
+				<b>Rishab Balasubramanian</b>, Rupashree Dey, Kunal Rathore<br>
+				<span class="meta">Preprint - arXiv.</span><br>
+				<span class="links">
+					<a href="https://arxiv.org/abs/2208.06083">[arXiv]</a>
+					<a href="https://github.com/rishabbala/Contrastive_Learning_For_Object_Detection">[code]</a>
+				</span>
+			</p>
+		</div>
 
-      <!-- Risk Aware TSP -->
-		  <tr onmouseout="tsp_stop()" onmouseover="tsp_start()">
-			<td style="padding:20px;width:25%;vertical-align:middle">
-			  <div class="one">
-				</br>
-				<div class="two" id='tsp_image'><video  width="100%" muted autoplay loop>
-				<source src="images/tsp.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-				</video></div>
-				<img src='images/tsp.png' width=100%>
-			  </div>
-			  <script type="text/javascript">
-				function tsp_start() {
-				  document.getElementById('tsp_image').style.opacity = "1";
-				}
+		<div class="entry">
+			<p>
+				<b><a href="webpages/rtabmap.html">Autonomous Mapping and Safe Footfall Planning for Hexapods</a></b><br>
+				<b>Rishab Balasubramanian</b>, <a href="https://www.marmotlab.org/people.html">Sun Ge, Guillaume Sartoretti</a><br>
+				Autonomous control of a legged robot to map a room using the RTABMap framework.<br>
+				<span class="links">
+					<a href="webpages/rtabmap.html">[page]</a>
+					<a href="https://github.com/Bibbidi-Babbidi-Boo/Hexapod-SLAM">[code]</a>
+				</span>
+			</p>
+		</div>
 
-				function tsp_stop() {
-				  document.getElementById('tsp_image').style.opacity = "0";
-				}
-				tsp_stop()
-			  </script>
-			</td>
-			<td style="padding:20px;width:75%;vertical-align:middle">
-			  <a href="https://arxiv.org/abs/2011.01095">
-				<papertitle>Risk Averse Submodular Optimization for the Multi-Objective Travelling Salesman Problem</papertitle>
-			  </a>
-			  <br>
-			  <strong>Rishab Balasubramanian</strong>,
-			  <a href="https://lfzhou917.github.io/">Lifeng Zhou, </a>
-			  <a href="https://tokekar.com/">Pratap Tokekar, </a>
-			  <a href="https://eecs.iiserb.ac.in/faculty_profile.php?id=OQ==&lname=c3VqaXQ=">P.B.Sujit</a>
-			  <br>
-			  <em style="color: red;">Accepted to IROS 2021</em>
-			  <br>
-			  <a href="https://drive.google.com/file/d/1enEaAZZIVq4uoyVOR9-MiQPVb8u8MLgB/view?usp=drive_link">video</a> /
-			  <a href="https://github.com/rishabbala/Risk-Aware-TSP">code</a>
-		  </tr>
+		<div class="entry">
+			<p>
+				<b><a href="webpages/orca.html">Formation Control and Collision Avoidance for Multi-Agent Systems</a></b><br>
+				<b>Rishab Balasubramanian</b>, <a href="https://www.nitt.edu/home/academics/departments/ice/faculty/professors/umapathy/">Prof. M Umapathy</a><br>
+				Multi-agent collision avoidance using the ORCA algorithm, compared with other algorithms.<br>
+				<span class="links">
+					<a href="webpages/orca.html">[page]</a>
+					<a href="https://github.com/Bibbidi-Babbidi-Boo/Swarm_formation_control/blob/master/main.pdf">[thesis]</a>
+				</span>
+			</p>
+		</div>
 
-      <tr onmouseout="sdre_stop()" onmouseover="sdre_start()">
-			<td style="padding:20px;width:25%;vertical-align:middle">
-			  <div class="one">
-				</br>
-				<div class="two" id='sdre_image'><video  width="100%" muted autoplay loop>
-				<source src="images/two_agent_land_no_crash_20.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-				</video></div>
-				<img src='images/two_agent_no_crash.png' width=100%>
-			  </div>
-			  <script type="text/javascript">
-				function sdre_start() {
-				  document.getElementById('sdre_image').style.opacity = "1";
-				}
+		<div class="entry">
+			<p>
+				<b><a href="webpages/asl.html">Real-Time American Sign Language to Text Conversion Using Convolutional Neural Networks</a></b><br>
+				<b>Rishab Balasubramanian</b>, <a href="http://apm.iitm.ac.in/biomedical/prof.Reddy/index.html">Ramasubba Reddy</a><br>
+				<span class="links">
+					<a href="webpages/asl.html">[page]</a>
+					<a href="https://drive.google.com/file/d/1RuTZp9CnLjQAjBO49qSd_nImj2liiyG4/view?usp=sharing">[abstract]</a>
+					<a href="https://github.com/Bibbidi-Babbidi-Boo/ASL-Text-Converter">[code]</a>
+				</span>
+			</p>
+		</div>
+		</div>
+	</section>
+			</main>
+		</div>
 
-				function sdre_stop() {
-				  document.getElementById('sdre_image').style.opacity = "0";
-				}
-				sdre_stop()
-			  </script>
-			</td>
-			<td style="padding:20px;width:75%;vertical-align:middle">
-			  <a href="https://arc.aiaa.org/doi/abs/10.2514/6.2021-1880">
-				<papertitle>A Cooperative Framework for Autonomous Landings of Quadrotors using Vision on a Moving UGV</papertitle>
-			  </a>
-			  <br>
-			  <strong>Rishab Balasubramanian</strong>,
-			  <a href="https://eecs.iiserb.ac.in/faculty_profile.php?id=OQ==&lname=c3VqaXQ=">P.B. Sujit</a>
-			  <br>
-			  <em style="color: red;">Accepted to AIAA SciTech 2021</em>
-			  <br>
-			  <a href="https://github.com/Bibbidi-Babbidi-Boo/SDRE-based-Cooperative-UAV-Landing-on-High-speed-targets">code</a> /
-			  <a href="https://drive.google.com/file/d/1cGH-qz4Ma5or8YGSOUNxVn9yl9IOdUs9/view?usp=drive_link">slides</a> /
-			  <a href="https://drive.google.com/file/d/1xKIcKVUNTNxpr2m7UbXNa72MOtT5KCh7/view?usp=drive_link">video</a>
-			</td>
-		  </tr>
-
-
-		</tbody></table>
-
-    <br>
-		<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-			<tr>
-			<td style="padding:20px;width:100%;vertical-align:middle">
-			  <heading><span style="background-color: #d1ffc9">Other Projects</heading></span>
-			</td>
-		  </tr>
-		</tbody></table>
-		<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-
-		  <!-- 3D reconstruction -->
-		  <tr onmouseout="recon_stop()" onmouseover="recon_start()">
-			<td style="padding:20px;width:25%;vertical-align:middle">
-			  <div class="one">
-				</br>
-				<div class="two" id='recon_image'><video  width="100%"  muted autoplay loop>
-				<source src="images/recon_demo.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-				</video></div>
-				<img src='images/recon.png' width=100%>
-			  </div>
-			  <script type="text/javascript">
-				function recon_start() {
-				  document.getElementById('recon_image').style.opacity = "1";
-				}
-
-				function recon_stop() {
-				  document.getElementById('recon_image').style.opacity = "0";
-				}
-				recon_stop()
-			  </script>
-			</td>
-			<td style="padding:20px;width:75%;vertical-align:middle">
-			  <a href="webpages/3d_recon.html">
-				<papertitle>3D reconstruction from endoscopic images</papertitle>
-			  </a>
-			  <br>
-			  <strong>Rishab Balasubramanian</strong>,
-			  <a href="https://endovisionai.com/">EndovisionAi</a>
-			  <br>
-			  <br>
-			  <br>
-			  <br>
-			</td>
-		  </tr>
-
-
-		  <!-- Contrastive Learning for OOD in Object detection -->
-		  <tr onmouseout="contrastive_stop()" onmouseover="contrastive_start()">
-			<td style="padding:20px;width:25%;vertical-align:middle">
-			  <div class="one">
-				</br>
-				<div class="two" id='contrastive_image'><img style="width:100%"  src="images/contrastive.png"></div>
-				<img src='images/contrastive.png' width=100%>
-			  </div>
-			  <script type="text/javascript">
-				function contrastive_start() {
-				  document.getElementById('contrastive_image').style.opacity = "1";
-				}
-
-				function contrastive_stop() {
-				  document.getElementById('contrastive_image').style.opacity = "0";
-				}
-				contrastive_stop()
-			  </script>
-			</td>
-			<td style="padding:20px;width:75%;vertical-align:middle">
-			  <a href="https://arxiv.org/abs/2208.06083">
-				<papertitle>Contrastive Learning for OOD in Object detection</papertitle>
-			  </a>
-			  <br>
-			  <strong>Rishab Balasubramanian</strong>,
-			  Rupashree Dey, Kunal Rathore
-			  <br>
-			  <i style="color: red;">PrePrint - arXiv</i>
-			  <br>
-			  <a href="https://github.com/rishabbala/Contrastive_Learning_For_Object_Detection">code</a>
-			  <br>
-			  <br>
-			</td>
-		  </tr>
-
-
-
-
-		  <!-- Hexapod -->
-		  <tr onmouseout="rtab_stop()" onmouseover="rtab_start()">
-			<td style="padding:20px;width:25%;vertical-align:middle">
-			  <div class="one">
-				</br>
-				<div class="two" id='rtab_image'><video  width="100%"  muted autoplay loop>
-				<source src="images/rtabmap.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-				</video></div>
-				<img src='images/rtabmap1.png' width=100%>
-			  </div>
-			  <script type="text/javascript">
-				function rtab_start() {
-				  document.getElementById('rtab_image').style.opacity = "1";
-				}
-
-				function rtab_stop() {
-				  document.getElementById('rtab_image').style.opacity = "0";
-				}
-				rtab_stop()
-			  </script>
-			</td>
-			<td style="padding:20px;width:75%;vertical-align:middle">
-			  <a href="webpages/rtabmap.html">
-				<papertitle>Autonomous Mapping And Safe Footfall Planning For Hexapods</papertitle>
-			  </a>
-			  <br>
-			  <strong>Rishab Balasubramanian</strong>,
-			  <a href="https://www.marmotlab.org/people.html">Sun Ge, Guillaume Sartoretti</a>
-			  <br>
-			  <a href="https://github.com/Bibbidi-Babbidi-Boo/Hexapod-SLAM">code</a>
-			  <br>
-			  <p>Working on autonomous control of a legged robot to map a room using RTABMap Framework</p>
-			</td>
-		  </tr>
-
-		  <!-- ORCA -->
-		  <tr onmouseout="orca_stop()" onmouseover="orca_start()">
-			<td style="padding:20px;width:25%;vertical-align:middle">
-			  <div class="one">
-			  </br>
-				<div class="two" id='orca_image'><video width=100%  muted autoplay loop>
-				<source src="images/4_bot.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-				</video></div>
-				<img src='images/4_bot.png' width="100%">
-			  </div>
-			  <script type="text/javascript">
-				function orca_start() {
-				  document.getElementById('orca_image').style.opacity = "1";
-				}
-
-				function orca_stop() {
-				  document.getElementById('orca_image').style.opacity = "0";
-				}
-				orca_stop()
-			  </script>
-			</td>
-			<td style="padding:20px;width:75%;vertical-align:middle">
-			  <a href="webpages/orca.html">
-				<papertitle>Formation Control And Collision Avoidance For Multi-Agent Systems</papertitle>
-			  </a>
-			  <br>
-			  <strong>Rishab Balasubramanian</strong>,
-			  <a>Lalita Soundari</a>,
-			  <a href="https://www.nitt.edu/home/academics/departments/ice/faculty/professors/umapathy/">Prof. M Umapathy</a>
-			  <br>
-			  <a href="https://github.com/Bibbidi-Babbidi-Boo/Swarm_formation_control/blob/master/main.pdf">Thesis</a>
-			  <p></p>
-			  <p>Multi agent collision Avoidance using the Optimal Reciprocal Collision Avoidance (ORCA) Algorithm and comparison with other algorithms</p>
-			</td>
-		  </tr>
-
-		  <!-- ASL -->
-		  <tr onmouseout="asl_stop()" onmouseover="asl_start()">
-			<td style="padding:20px;width:25%;vertical-align:middle">
-			  <div class="one">
-			  </br>
-				<div class="two" id='asl_image'><video width=160  muted autoplay loop>
-				<source src="images/asl_clear_back.mp4" type="video/mp4">
-				Your browser does not support the video tag.
-				</video></div>
-				<img src='images/asl.png' width="160">
-			  </div>
-			  <script type="text/javascript">
-				function asl_start() {
-				  document.getElementById('asl_image').style.opacity = "1";
-				}
-
-				function asl_stop() {
-				  document.getElementById('asl_image').style.opacity = "0";
-				}
-				asl_stop()
-			  </script>
-			</td>
-			<td style="padding:20px;width:75%;vertical-align:middle">
-			  <a href="webpages/asl.html">
-				<papertitle>Real-Time American Sign Language To Text Conversion Using Convolutional Neural Networks</papertitle>
-			  </a>
-			  <br>
-			  <strong>Rishab Balasubramanian</strong>,
-			  <a href="http://apm.iitm.ac.in/biomedical/prof.Reddy/index.html">Ramasubba Reddy</a>
-			  <br>
-			  <br>
-			  <a href="https://drive.google.com/file/d/1RuTZp9CnLjQAjBO49qSd_nImj2liiyG4/view?usp=sharing">abstract </a>/
-			  <a href="https://github.com/Bibbidi-Babbidi-Boo/ASL-Text-Converter">code</a>
-			  <p></p>
-			</td>
-		  </tr>
-
-
-		<table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-		  <tr>
-			<td style="padding:0px">
-			  <br>
-			  <p style="text-align:right;font-size:small;">
-				Special thanks to Jon Barron for the website template
-			  </p>
-			</td>
-		  </tr>
-		</tbody></table>
-	  </td>
-	</tr>
-  </table>
+		<footer class="site-footer">
+			<p class="caption">Last updated: 10/13/2026.</p>
+			<nav class="footer-links" aria-label="Footer links">
+				<a href="#top">Back to top ↑</a>
+			</nav>
+		</footer>
+	</div>
 </body>
 
 </html>

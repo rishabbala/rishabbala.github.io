@@ -1,0 +1,9 @@
+<!--
+A tiny pixel flower marks this personal field notebook.
+Last modified: 2026-09-30
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+	<rect width="32" height="32" fill="#fbfaf4"/>
+	<path d="M14 3h4v8l6-6 3 3-6 6h8v4h-8l6 6-3 3-6-6v8h-4v-8l-6 6-3-3 6-6H3v-4h8L5 8l3-3 6 6Z" fill="#256247"/>
+	<rect x="14" y="14" width="4" height="4" fill="#e5b26b"/>
+</svg>
